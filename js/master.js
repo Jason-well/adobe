@@ -11,6 +11,7 @@ console.log($(window).width());
 
 const isMobile  = $(window).width() <= 480
 const $grid = $('#Grid');
+const $anchors = $grid.find('a');
 
 
 
@@ -61,10 +62,19 @@ function setInit() {
 
 function setEvent(){
     setScroll();
+    setFancybox();
 }
+
+function setFancybox(){
+    $anchors.fancybox({});
+};
+
+
 
 setEvent();
 setInit();
+
+
 
 
 
