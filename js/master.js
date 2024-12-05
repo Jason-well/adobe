@@ -66,7 +66,38 @@ function setEvent(){
 }
 
 function setFancybox(){
-    $anchors.fancybox({});
+    $anchors.fancybox({
+        protect: true,
+        loop: true,
+        animationDuration: 1000,
+        transitionDuration: 1000,
+        transitionEffect: 'rotate',
+        keyboard: true,
+        // fullScreen: {
+        //     autoStart: true,
+        // },
+        infobar: true,
+        toolbar: true,
+        smallBtn: false,
+        arrows: true,
+        slideShow: {
+            autoStart: false,
+            speed:3000,
+        },
+        thumbs: true,
+        // buttons: [
+        //     'close'
+        // ]
+        media:{
+            youtube:{
+                params:{
+                    autoplay:false,
+                }
+                
+            }
+        }
+
+    });
 };
 
 
